@@ -11,7 +11,7 @@
         <div class="no-publications__container _container">
           <div class="no-publications__content">
             <p class="no-publications__text">no publications</p>
-            <button class="no-publications__button button">
+            <button class="no-publications__button button" id="create-button">
               create
             </button>
           </div>
@@ -21,42 +21,32 @@
         <div class="with-publications__container _container">
           <div class="with-publications__content">
             <div class="with-publications__content-header">
-              <p class="number-publications">3 publications</p>
-              <button class="with-publications__button button" id="button" >
+              <p class="number-publications" id="publications-count"></p>
+              <button class="with-publications__button button" id="add-button" >
                 add
               </button>
             </div>
             <div class="with-publications__content-main">
-              <div class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, accusamus. Unde ea provident adipisci? Cumque molestiae obcaecati beatae iste sint? Repudiandae, enim. Rerum quidem, modi accusantium beatae voluptatum ipsum vitae!</div>
-              <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores quidem modi non veritatis fugiat optio temporibus sed, officia culpa beatae, exercitationem placeat dolores corporis nulla aliquid quibusdam illo enim!
-              Optio consectetur ipsam velit, earum reiciendis qui quia sed alias, necessitatibus veniam voluptates, sequi vel expedita assumenda est suscipit a! Aperiam, ex. Culpa sit sint natus iusto, quis quasi quibusdam!
-              Corporis inventore minima libero modi culpa at quasi porro quae quidem illo iusto, omnis placeat fugit dolore error aliquam, numquam doloremque laudantium debitis deserunt, blanditiis alias ipsam id veniam. Deleniti.
-              Ipsum architecto totam dolore dolores maiores voluptate sit asperiores, voluptates ullam, labore culpa dolor quis facilis corrupti incidunt officia explicabo fuga numquam iste minus? Aspernatur cupiditate sequi blanditiis magni qui!
-              Dolorum, ratione. pariatur nostrum consequuntur similique ipsum minima debitis! Nesciunt enim ad animi, officia tempora, repellat sit, doloribus eveniet optio fuga unde?
-              Sint deleniti consequatur placeat consequuntur fuga, iusto alias reprehenderit rem amet numquam eum, expedita enim quod tempore repudiandae ullam ea ipsam nisi laborum dignissimos aperiam magni dicta quos. In, doloremque.
-              Eius corporis obcaecati ex possimus neque a officiis quos voluptates dicta ea facilis voluptatem non asperiores temporibus dolor incidunt adipisci voluptatum, quod blanditiis odio ipsam facere, nobis consequuntur ut? Possimus?</div>
-              <div class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid aperiam, quibusdam nemo, adipisci tempore provident iusto magni nobis natus dolorum numquam libero rerum, saepe ut! Tempore similique ducimus nihil impedit!
-              Facilis velit aliquam similique dicta asperiores pariatur fuga non vitae! Ut delectus harum praesentium dolore, eveniet voluptatibus autem consequuntur sint dicta assumenda quod excepturi iusto ullam commodi corporis consequatur hic?</div>
-              <div class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptates suscipit cumque maiores, voluptate voluptatem repellendus, libero ullam consectetur nulla vel possimus </div>
-              <div class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ut nulla repellendus non tenetur magni voluptate officiis hic voluptatem iste blanditiis totam, animi quod molestias! Fugiat eos voluptas voluptatem totam!</div>
-              <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, impedit facilis voluptatum vitae minima alias perferendis facere velit, in suscipit cum quae odit, rem perspiciatis. Ipsum aspernatur voluptatibus beatae dolor!
-              Quasi quo corporis quisquam pariatur vitae exercitationem error dicta. Iste minima quam facere suscipit, odio sint esse aliquid repudiandae eum! Consectetur optio debitis exercitationem facilis ipsam earum, veritatis hic adipisci!</div>
-              <div class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti mollitia dignissimos commodi natus nulla rerum ea reiciendis veritatis delectus dolorum. Eos eaque aspernatur suscipit, quas culpa odit nostrum cumque est.</div>
+              <div class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor eius atque numquam. Sunt sapiente beatae temporibus ad ea qui totam nulla, repudiandae repellat similique, placeat assumenda, officia odit aspernatur.</div>
+              <div class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor eius atque numquam. Sunt sapiente beatae temporibus ad ea qui totam nulla, repudiandae repellat similique, placeat assumenda, officia odit aspernatur.</div>
+              <div class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor eius atque numquam. Sunt sapiente beatae temporibus ad ea qui totam nulla, repudiandae repellat similique, placeat assumenda, officia odit aspernatur.</div>
+              <div class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor eius atque numquam. Sunt sapiente beatae temporibus ad ea qui totam nulla, repudiandae repellat similique, placeat assumenda, officia odit aspernatur.</div>
+              <div class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor eius atque numquam. Sunt sapiente beatae temporibus ad ea qui totam nulla, repudiandae repellat similique, placeat assumenda, officia odit aspernatur.</div>
             </div>
           </div>
         </div>
       </div>
-      <div id="modal-window" class="modal-window">
+      <div id="modal-window" class="modal-window" >
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close">&times;</span>
+            <span id="close" class="close">&times;</span>
             <h2>New publication</h2>
           </div>
           <div class="modal-body">
-            <form method="post">
-              <p><textarea rows="30" cols="50" name="text"></textarea></p>
+            <form>
+              <p><textarea class="textarea" rows="30" cols="50" name="text" placeholder="Enter the text of the publication" required></textarea></p>
               <div class="modal-submit">
-                <p><input type="submit" value="Отправить" class="submit"></p>
+                <p><button class="submit">submit</p>
               </div>
             </form>
           </div>
